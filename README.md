@@ -8,14 +8,14 @@ To run this code from scratch, just do:
 ```bash
 git clone https://github.com/nolanlawson/pouchdb-prebuilt-demo.git
 cd pouchdb-prebuilt-demo
+cordova platform add android
 cordova prepare
+cordova run android
 ```
 
-Then run:
+Or on iOS:
 
 ```bash
-# android
-cordova platform add android && cordova run android
-# ios
-cordova platform add ios && cordova run ios
+cordova platform add ios
+cordova run ios
 ```
