@@ -58,9 +58,9 @@ var app = {
           });
         }
 
-        copyDatabaseFile('_pouch_turtles.db').then(function () {
+        copyDatabaseFile('turtles.db').then(function () {
           // database ready!
-          var db = new PouchDB('turtles.db', {adapter: 'websql'});
+          var db = new PouchDB('turtles.db', {adapter: 'cordova-sqlite'});
           return db.allDocs({include_docs: true});
         }).then(function (results) {
           var pre = document.createElement('pre');
